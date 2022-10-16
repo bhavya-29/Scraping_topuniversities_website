@@ -38,8 +38,8 @@ def get_uni_information(driver,unilist):
     
     for i in range(5):
         try:
-            #element= driver.find_element(By.XPATH, '//*[@id="alt-style-pagination"]/li['+str(3+i)+']/a')
-            element= driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div[1]/div[2]/main/section/div/section/section/div/div/article/div/div/div[3]/div/div[1]/div/div[3]/div[4]/div[2]/div/ul/li[7]/a')           
+            element= driver.find_element(By.XPATH, '//*[@id="alt-style-pagination"]/li['+str(3+i)+']/a')
+            #element= driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div[1]/div[2]/main/section/div/section/section/div/div/article/div/div/div[3]/div/div[1]/div/div[3]/div[4]/div[2]/div/ul/li[7]/a')           
             driver.execute_script('arguments[0].scrollIntoView();', element)
             driver.execute_script('window.scrollBy(0, -200);')
             element.click()
